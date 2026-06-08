@@ -70,13 +70,11 @@ pub fn visioner(phrase: String) -> std::io::Result<()>{
         }
     }
 
-    let mut new_file = File::create("encripted_text.txt")?;
+    let mut new_file = File::create("src/encripted_text.txt")?;
     write!(new_file,"{}" ,encripted_text)?;
     Ok(())
 
 }
-
-
 
 
 fn main() {
