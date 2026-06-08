@@ -31,7 +31,9 @@ pub fn range_two_sum(list: Vec<i32>) -> std::io::Result<i32>{
     index.sort();
     
     for num in &list[index[0] as usize..index[1] as usize]{
-        total += num
+        if *num < 0{
+            total += num
+        }
     }
     
     Ok(total)
