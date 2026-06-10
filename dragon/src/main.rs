@@ -3,8 +3,13 @@ use std::io;
 pub fn dragon(num: i64){
     let mut num: i64 = num;
     let mut total: i64 = 0;
+    
+    if num == 5 {
+        total = 6
+    }else if num < 5{
+        total = num;
 
-    if num % 3 > 0{
+    }else if num % 3 > 0{
         total += 3;
         num -= 3;
 
@@ -20,7 +25,6 @@ pub fn dragon(num: i64){
                 break
             }
         }
-
     }else{
         total += 3;
         num -= 3;

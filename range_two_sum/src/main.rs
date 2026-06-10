@@ -10,8 +10,8 @@ pub fn find_index(list: Vec<i32>, num: i32) -> std::io::Result<i32>{
 }
 
 pub fn range_two_sum(list: Vec<i32>) -> std::io::Result<i32>{
-    let mut min_num: i32 = 0;
-    let mut max_num: i32 = 0;
+    let mut min_num: i32 = list[0];
+    let mut max_num: i32 = list[0];
     let mut index: Vec<i32> = Vec::new();
     let mut total: i32 = 0;
 
